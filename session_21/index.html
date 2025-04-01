@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <form >
+            <h2>registration form</h2>
+            <div class="form-holder">
+                <div class="form-data">
+                    <span><i class="fa-solid fa-user"></i></span>
+                    <input type="text" class="form-control" placeholder="userName"  id="userName" required autocomplete="off">
+                </div>
+                <div class="error" id="userNameError"></div>
+            </div>
+
+            <div class="form-holder">
+                <div class="form-data">
+                    <span><i class="fa-solid fa-envelope"></i></span>
+                    <input type="email" class="form-control" placeholder="userEmail"  id="userEmail" required>
+                </div>
+                <div class="error" id="userEmailError"></div>
+            </div>
+
+            
+            <div class="form-holder">
+                <div class="form-data">
+                    <span><i class="fa-solid fa-mobile"></i></span>
+                    <input type="tel" class="form-control" placeholder="userNumber" required id="userNumber">
+                </div>
+                <div class="error" id="userPhoneNoError"></div>
+            </div>
+<!-- password -->
+            <div class="form-holder">
+                <div class="form-data">
+                    <span><i class="fa-solid fa-lock"></i></span>
+                    <input type="password" class="form-control" placeholder="userpassword" required id="userPassword">
+                </div>
+                <div class="error" id="userPasswordError"></div>
+            </div>
+
+            <!-- dob -->
+            <div class="form-holder">
+                <div class="form-data">
+                    <span><i class="fa-solid fa-calendar"></i></span>
+                    <input type="date" class="form-control" id="userDOB"  required >
+                </div>
+                <div class="error" id="userDOBError"></div>
+            </div>
+
+            <!-- GENDER -->
+            <div class="form-holder">
+                <div class="form-data">
+                    <span><i class="fa-solid fa-person"></i></span>
+                    <label for="">select your gender:</label> <br>
+                    <input type="radio" value="" id="male" name="gender">
+                    <label for="male">male</label>
+                    <input type="radio" value="" id="female" name="gender">
+                    <label for="female">female</label>
+                    <input type="radio" value="" id="other" name="gender">
+                    <label for="other">other</label>
+                </div>
+                <div class="error" id="genderError"></div>
+            </div>
+
+            <!-- address -->
+            <div class="form-holder">
+                <div class="form-data">
+                    <span><i class="fa-solid fa-location-dot"></i></span>
+                    <input type="text" class="form-control" id="userAddress" placeholder="write your address here..." required >
+                </div>
+                <div class="error" id="userAddressError"></div>
+            </div>
+
+
+            <div class="academic " >
+                <p>Academic information</p>
+                    <label for="courses">Select Course :</label>
+                <select name="" id="course">
+                <option value="">-- Course--</option>
+                <option value="BCA">BCA</option>
+                <option value="ba">BA</option>
+                <option value="BSC">B.SC</option>
+                <option value="BCOM">B.COM</option>
+                <option value="BBA">BBA</option>
+                <option value="BTECH">B.TECH</option>
+                </select>
+                
+            </div>
+            <div class="error" id="courseError"></div>
+            
+            <!-- agreement -->
+
+            <div class="form-holder">
+                <div class="form-data">
+                    <span><i class="fa-solid fa-handshake"></i></span>
+                    <input type="checkbox" class="form-control" id="agreement"  required >
+                    <label for="agreement">I accept the Terms & Conditions</label>
+                </div>
+                <div class="error" id="userAgreementError"></div>
+            </div>
+
+
+            <button class="submitForm form-data">
+                <span>registration</span>
+            </button>
+        </form>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

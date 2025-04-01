@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    margin-left: 5rem;
+    background: url(pexels-francesco-ungaro-2325447.jpg) no-repeat center center/cover;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 15px;
+    width: 350px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.form-holder{
+    margin: 1rem;
+
+}
+.form-data{
+    background-color: white;
+    padding-left: 10px;
+}
+
+input{
+    padding: 0.35rem;
+    border: none;
+}
+
+.error{
+    color: red;
+    font-size: small;
+}

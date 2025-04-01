@@ -28,9 +28,9 @@ let namePattern = /^[A-Za-z]{3,}$/;
                 console.log(userEmail)
             };
 // phone
-            let phonePattern = /^[0-9]{10}$/;
+            let phonePattern = /^[987][0-9]{9}$/;
             if (!phonePattern.test(userNumber)) {
-                document.getElementById("userPhoneNoError").innerText = "Phone must be 10 digits.";
+                document.getElementById("userPhoneNoError").innerText ="Phone must be 10 digits & start with 9, 8, or 7.";
                 valid = false;
             } else {
                 document.getElementById("userPhoneNoError").innerText = "";
@@ -111,7 +111,7 @@ let namePattern = /^[A-Za-z]{3,}$/;
 
             if (valid) {
                 alert("Form submitted successfully!");
-                document.getElementById("regForm").reset();
+                document.getElementById("formvalidation").reset();
             }
             
 })

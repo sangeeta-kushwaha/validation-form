@@ -9,12 +9,12 @@
 </head>
 <body>
     <div class="container">
-        <form >
+        <form id="formvalidation" >
             <h2>registration form</h2>
             <div class="form-holder">
                 <div class="form-data">
                     <span><i class="fa-solid fa-user"></i></span>
-                    <input type="text" class="form-control" placeholder="userName"  id="userName" required autocomplete="off">
+                    <input type="text" class="form-control" placeholder="user Name"  id="userName" required autocomplete="off">
                 </div>
                 <div class="error" id="userNameError"></div>
             </div>
@@ -22,7 +22,7 @@
             <div class="form-holder">
                 <div class="form-data">
                     <span><i class="fa-solid fa-envelope"></i></span>
-                    <input type="email" class="form-control" placeholder="userEmail"  id="userEmail" required>
+                    <input type="email" class="form-control" placeholder="user Email"  id="userEmail" required>
                 </div>
                 <div class="error" id="userEmailError"></div>
             </div>
@@ -31,7 +31,7 @@
             <div class="form-holder">
                 <div class="form-data">
                     <span><i class="fa-solid fa-mobile"></i></span>
-                    <input type="tel" class="form-control" placeholder="userNumber" required id="userNumber">
+                    <input type="tel" class="form-control" placeholder="user Number" required id="userNumber">
                 </div>
                 <div class="error" id="userPhoneNoError"></div>
             </div>
@@ -39,7 +39,7 @@
             <div class="form-holder">
                 <div class="form-data">
                     <span><i class="fa-solid fa-lock"></i></span>
-                    <input type="password" class="form-control" placeholder="userpassword" required id="userPassword">
+                    <input type="password" class="form-control" placeholder="user password" required id="userPassword">
                 </div>
                 <div class="error" id="userPasswordError"></div>
             </div>
@@ -55,16 +55,12 @@
 
             <!-- GENDER -->
             <div class="form-holder">
-                <div class="form-data">
-                    <span><i class="fa-solid fa-person"></i></span>
+                <span><i class="fa-solid fa-person"></i></span>
                     <label for="">select your gender:</label> <br>
-                    <input type="radio" value="" id="male" name="gender">
-                    <label for="male">male</label>
-                    <input type="radio" value="" id="female" name="gender">
-                    <label for="female">female</label>
-                    <input type="radio" value="" id="other" name="gender">
-                    <label for="other">other</label>
-                </div>
+                    <input type="radio" value="" id="male" name="gender">male
+                    <input type="radio" value="" id="female" name="gender">female
+                    <input type="radio" value="" id="other" name="gender">others
+           
                 <div class="error" id="genderError"></div>
             </div>
 
@@ -78,7 +74,7 @@
             </div>
 
 
-            <div class="academic " >
+            <div class="academic  " >
                 <p>Academic information</p>
                     <label for="courses">Select Course :</label>
                 <select name="" id="course">
@@ -97,17 +93,17 @@
             <!-- agreement -->
 
             <div class="form-holder">
-                <div class="form-data">
+                
                     <span><i class="fa-solid fa-handshake"></i></span>
                     <input type="checkbox" class="form-control" id="agreement"  required >
-                    <label for="agreement">I accept the Terms & Conditions</label>
-                </div>
+                    <label for="agreement" >I accept the Terms & Conditions</label>
+                
                 <div class="error" id="userAgreementError"></div>
             </div>
 
 
             <button class="submitForm form-data">
-                <span>registration</span>
+              registration
             </button>
         </form>
     </div>

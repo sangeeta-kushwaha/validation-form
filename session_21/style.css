@@ -34,12 +34,37 @@ body {
     padding-left: 10px;
 }
 
+
 input{
     padding: 0.35rem;
     border: none;
+    outline: none;
+    font-weight: bold;
 }
+
 
 .error{
     color: red;
     font-size: small;
+}
+.submitForm {
+    padding: 0.65rem 2rem;
+    font-size: 1rem;
+    background-color: rgb(87, 87, 231);
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    margin-left: 5rem;
+}
+.submitForm:hover{
+    background-color: rgb(16, 16, 46);
+}
+p{
+    font-weight: bold;
+}
+
+label{
+    font-size: 1rem;
+    font-weight: bold;
+    
 }
